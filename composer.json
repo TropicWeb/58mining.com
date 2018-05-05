@@ -1,0 +1,13 @@
+{
+    "name": "root/58mining.com",
+    "require-dev": {
+        "phroute/phroute": "^2.1"
+    },
+    "authors": [
+        {
+            "name": "Diego",
+            "email": "disalvatorediego@gmail.com"
+        }
+    ],
+    "require": {}
+}
