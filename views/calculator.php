@@ -49,7 +49,7 @@
           <div class="p-2 bd-highlight convert">
             <div class="d-flex flex-row bd-highlight justify-content-around">
               <div class="p-2 bd-highlight">
-                <input id="input" class="p-2 bd-highlight form-control form-control-lg" type="text" placeholder="USD ($)">              
+                <input id="input" type="number" class="p-2 bd-highlight form-control form-control-lg" placeholder="USD ($)">              
               </div>
               <div class="p-2 bd-highlight">
                 <select id="selector" class="form-control form-control-lg">
