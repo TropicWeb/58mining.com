@@ -9,5 +9,10 @@
             "email": "disalvatorediego@gmail.com"
         }
     ],
-    "require": {}
+     "autoload":{
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "require": {}   
 }

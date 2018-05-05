@@ -1,0 +1,11 @@
+<?php 
+	namespace App\Controllers;
+
+	class IndexController extends BaseController {
+
+		public function getIndex(){
+			return $this->render('../views/main.php');
+		}
+	}
+
+?>
