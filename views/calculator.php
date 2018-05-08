@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Rubik" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="CSS/bootstrap-grid.min.css">
     <link rel="stylesheet" type="text/css" href="CSS/bootstrap-reboot.min.css">
     <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
@@ -41,7 +42,7 @@
     </div>
   </nav>
 <!--Sección 2-->
-  <section class="container-fluid sep12">
+   <section class="container-fluid sep12">
     <div class="row">
       <div class="col-md-3 col-xs-2"></div>
       <div class="col-md-6 col-xs-8">
@@ -49,10 +50,11 @@
           <div class="p-2 bd-highlight convert">
             <div class="d-flex flex-row bd-highlight justify-content-around">
               <div class="p-2 bd-highlight">
-                <input id="input" type="number" class="p-2 bd-highlight form-control form-control-lg" placeholder="USD ($)">              
+                <input id="input" class="p-2 bd-highlight form-control form-control-lg imp" type="text" placeholder="USD ($)">             
               </div>
+
               <div class="p-2 bd-highlight">
-                <select id="selector" class="form-control form-control-lg">
+                <select id="selector" class="form-control form-control-lg imp2">
                   <option value="BTC">BTC - Bitcoin</option>
                   <option value="BCH">BCH - Bitcoin Cash</option>
                   <option value="ETH">ETH - Ethereum</option>
@@ -63,9 +65,9 @@
                 </select>           
               </div>
             </div>
-            <div class="d-flex flex-row bd-highlight justify-content-center result">
+           <div class="d-flex flex-row bd-highlight justify-content-center result">
               <div class="p-2 bd-highlight">
-                <input id="resultOP" class="p-2 bd-highlight form-control form-control-lg" type="text" >              
+                <input id="resultOP" class="p-2 bd-highlight form-control form-control-lg imp" type="text" placeholder="Value">
               </div>
             </div>
           </div>
@@ -74,14 +76,14 @@
       <div class="col-md-3 col-xs-2"></div>
     </div>
 
-    <div class="row sep12">
+   <div class="row sep12">
       <div class="col-md-1"></div>
       <div class="col-md-10">
         <div class="d-flex flex-row bd-highlight justify-content-center">
           <div class="p-2 bd-highlight convert">
             <div class="d-flex flex-row bd-highlight justify-content-around">
               <div class="p-2 bd-highlight">
-                <select id="selector1" class="form-control form-control-lg">
+                <select id="selector1" class="form-control form-control-lg imp2">
                   <option value="BTC">BTC - Bitcoin</option>
                   <option value="BCH">BCH - Bitcoin Cash</option>
                   <option value="ETH">ETH - Ethereum</option>
@@ -91,11 +93,11 @@
                   <option value="XVG">XVG - Verge</option>
                 </select>           
               </div>
-              <div class="p-2 bd-highlight">
-                <p class="vs">VS</p>          
+               <div class="p-2 bd-highlight">
+                <p class="vs">/</p>          
               </div>
-              <div  class="p-2 bd-highlight">
-                <select id="selector2" class="form-control form-control-lg">
+              <div class="p-2 bd-highlight">
+                <select id="selector2" class="form-control form-control-lg imp2">
                   <option value="BTC">BTC - Bitcoin</option>
                   <option value="BCH">BCH - Bitcoin Cash</option>
                   <option value="ETH">ETH - Ethereum</option>
@@ -109,20 +111,52 @@
 
              <div class="d-flex flex-row bd-highlight justify-content-around seplite">
               <div class="p-2 bd-highlight">
-                <label id="lr1">BTC/BTC</label>
-                <p id="r1" class="estacal animated"></p>        
+                <div class="animated estacal">
+                  <div class="row">
+                    <section class="col-md-3"></section>
+                    <section class="col-md-6">
+                      <p id="lr1" class=" estares text-center">M1/M2</p>
+                      <p id="r1" class=" estares text-center">1,503</p>
+                    </section>
+                    <section class="col-md-3"></section>
+                  </div>
+                </div>         
               </div>
               <div class="p-2 bd-highlight">
-                <label id="lr2">BTC/BTC</label>
-                <p id="r2" class="estacal animated"></p>          
+                <div class="animated estacal">
+                  <div class="row">
+                    <section class="col-md-3"></section>
+                    <section class="col-md-6">
+                      <p id="lr2" class=" estares text-center">M2/M1</p>
+                      <p id="r2" class=" estares text-center">2,509</p>
+                    </section>
+                    <section class="col-md-3"></section>
+                  </div>
+                </div>         
               </div>
               <div class="p-2 bd-highlight">
-                <label id="lr3">Percent Change 24H - BTC</label>
-                <p id="r3" class="estacal animated"></p>     
+                <div class="animated estacal">
+                  <div class="row">
+                    <section class="col-md-3"></section>
+                    <section class="col-md-6">
+                      <p id="lr3" class=" estares text-center">% (M1)</p>
+                      <p id="r3" class=" estares text-center">+4,25%</p>
+                    </section>
+                    <section class="col-md-3"></section>
+                  </div>
+                </div>     
               </div>
               <div class="p-2 bd-highlight">
-                <label id="lr4">Percent Change 24H - BTC</label>
-                <p id="r4" class="estacal animated"></p>          
+                <div class="animated estacal">
+                  <div class="row">
+                    <section class="col-md-3"></section>
+                    <section class="col-md-6">
+                      <p id="lr4" class=" estares text-center">% (M1)</p>
+                      <p id="r4" class=" estares text-center">-1,25%</p>
+                    </section>
+                    <section class="col-md-3"></section>
+                  </div>
+                </div>        
               </div>
             </div>
           </div>
@@ -154,25 +188,32 @@
 
         switch(option){
           case "BTC":
-            $("#resultOP").val(($("#input").val())/price.BTC);  
+            var result = ($("#input").val())/price.BTC;
+            $("#resultOP").val( result.toFixed(2) + " BTC");  
           break;
           case "BCH":
-            $("#resultOP").val(($("#input").val())/price.BCH);  
+            var result = ($("#input").val())/price.BCH;
+            $("#resultOP").val(result.toFixed(2) + " BCH");  
           break;
           case "ETH":
-            $("#resultOP").val(($("#input").val())/price.ETH);  
+            var result = ($("#input").val())/price.ETH;
+            $("#resultOP").val(result.toFixed(2) + " ETH");  
           break;
           case "ETC":
-            $("#resultOP").val(($("#input").val())/price.ETC);  
+            var result = ($("#input").val())/price.ETC;
+            $("#resultOP").val(result.toFixed(2) + " ETC");  
           break;
           case "LTC":
-            $("#resultOP").val(($("#input").val())/price.LTC);  
+            var result = ($("#input").val())/price.LTC;
+            $("#resultOP").val(result.toFixed(2) + " LTC");  
           break;
           case "XVG":
-            $("#resultOP").val(($("#input").val())/price.XVG);  
+            var result = ($("#input").val())/price.XVG;
+            $("#resultOP").val(result.toFixed(2) + " XVG");  
           break;
           case "SC":
-            $("#resultOP").val(($("#input").val())/price.SC); 
+            var result = ($("#input").val())/price.SC;
+            $("#resultOP").val(result.toFixed(2)+ " SC"); 
           break;
         }
           
@@ -216,6 +257,8 @@
       var price2;
       var percent1;
       var percent2;
+      var result1;
+      var result2;
 
       switch(option1){
        case "BTC":
@@ -283,37 +326,44 @@
     if ($(".estacal").hasClass("key")){
       $(".estacal").removeClass("fadeInUp");
       $(".estacal").addClass("fadeOutDown");
-      var delayInMilliseconds = 250; //0.5 seconds
+      var delayInMilliseconds = 750; //0.5 seconds
       setTimeout(function() {
           $(".estacal").removeClass("key");
-            //CAMBIAR VALORES
-          $("#lr1").text(option1+'/'+option2);
-          $("#r1").text(price1/price2);
-          $("#lr2").text(option2+'/'+option1);
-          $("#r2").text(price2/price1); 
-          $("#lr3").text('Percent Change last 24H -'+ option1);
-          $("#r3").text(percent1);
-          $("#lr4").text('Percent Change last 24H -'+ option2);
-          $("#r4").text(percent2);
+          $(".estares").removeClass("key2");
+          $("#r3").removeClass("pos");
+          $("#r3").removeClass("neg");
+          $("#r4").removeClass("pos");
+          $("#r4").removeClass("neg");
       }, delayInMilliseconds);
 
-    }else{
-        //CAMBIAR VALORES
-        $("#lr1").text(option1+'/'+option2);
-        $("#r1").text(price1/price2);
-        $("#lr2").text(option2+'/'+option1);
-        $("#r2").text(price2/price1); 
-        $("#lr3").text('Percent Change last 24H -'+ option1);
-        $("#r3").text(percent1);
-        $("#lr4").text('Percent Change last 24H -'+ option2);
-        $("#r4").text(percent2);      
     }
-      var delayInMilliseconds = 750; //0.75 second
-      setTimeout(function() {
-        $(".estacal").removeClass("fadeOutDown");
-        $(".estacal").addClass("key");
-        $(".estacal").addClass("fadeInUp");
-      }, delayInMilliseconds);
+    
+    var delayInMilliseconds = 1000; //0.75 second
+    setTimeout(function() {
+       //CAMBIAR VALORES
+      $("#lr1").text(option1+'/'+option2);
+      result1 = price1/price2;
+      $("#r1").text(result1.toFixed(2));
+
+      $("#lr2").text(option2+'/'+option1);
+      result2 = price2/price1;
+      $("#r2").text(result2.toFixed(2));
+
+      $("#lr3").text('% '+ option1);
+      $("#r3").text(percent1);
+
+      $("#lr4").text('% '+ option2);
+      $("#r4").text(percent2);
+
+      $(".estacal").removeClass("fadeOutDown");
+      if(percent1>0) $("#r3").addClass("pos");
+      else $("#r3").addClass("neg");
+      if(percent2>0) $("#r4").addClass("pos");
+      else $("#r4").addClass("neg");
+      $(".estares").addClass("key2");
+      $(".estacal").addClass("key");
+      $(".estacal").addClass("fadeInUp");
+    }, delayInMilliseconds);
       
     }
 

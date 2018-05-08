@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Rubik" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="CSS/bootstrap-grid.min.css">
     <link rel="stylesheet" type="text/css" href="CSS/bootstrap-reboot.min.css">
     <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
