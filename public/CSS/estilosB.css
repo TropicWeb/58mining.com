@@ -3,9 +3,8 @@
 }
 
 body{
-	background-color: #fff;
-	font-family: 'Rubik';
-	background-image: url('../Images/dark.png');
+	background-image: url('../Images/fblue.jpg');
+	font-family: 'Rubik', sans-serif;
 }
 
 /*Sección 1*/
@@ -46,18 +45,13 @@ li:focus, a:focus {
 	margin-top: 60px;
 }
 
-.fondocalc{
-	background-image: url('../Images/fblue.jpg');
-	height: 600px;
-}
-
 .vs{
 	color: black;
 	font-size: 35px;
 }
 
 .seplite{
-	margin-top: 50px;
+	margin-top: 10px;
 }
 
 .estacal{
@@ -66,7 +60,7 @@ li:focus, a:focus {
 	height: 90px;
 	width: 200px;
 	/*background-color: #ce9729;*/
-	background-color: transparent;
+	background-color: transparent;	
 }
 
 .estares{
@@ -85,8 +79,18 @@ li:focus, a:focus {
 	margin-top: 50px;
 }
 
+.select{
+	margin-top: 30px;
+}
+
+.selector{
+	margin-top: 20px;
+} 
+
 .key{
 	background-color: #ce9729;
+	/*border: 2px solid #26427b;*/
+	border-radius: 5px;
 }
 
 .key2{
@@ -136,14 +140,6 @@ li:focus, a:focus {
     box-shadow: 0 0 0 0.2rem rgba(206,151,41,.75);
 }
 
-option {
-    font-weight: normal;
-    display: block;
-    white-space: pre;
-    min-height: 1.2em;
-    padding: 0px 2px 1px;
-}
-
 .pos{
 	color:green;
 }
@@ -151,6 +147,34 @@ option {
 .neg{
 	color:red;
 }
+
+.sec5c{
+    margin-top: 110px;
+    background-color: #ce9729;
+    height: 100px;
+}
+
+.copy{
+    height: 80px;
+    width: auto;
+    margin-top: 10px;
+}
+
+.fotex{
+    margin-top: 30px;
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.fotex:hover{
+    color: #fff;
+}
+
+.testgab{
+	height: 500px;
+	width:1500px;
+}
+
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {}

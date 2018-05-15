@@ -5,28 +5,7 @@
 
 		public function getIndex(){
 
-			$jsonBTC = file_get_contents("https://api.coinmarketcap.com/v2/ticker/1/");
-			$jsonLTC = file_get_contents("https://api.coinmarketcap.com/v2/ticker/2/");
-			$jsonETH = file_get_contents("https://api.coinmarketcap.com/v2/ticker/1027/");
-			$jsonBCH = file_get_contents("https://api.coinmarketcap.com/v2/ticker/1831/");
-			$jsonETC = file_get_contents("https://api.coinmarketcap.com/v2/ticker/1321/");
-			$jsonXVG = file_get_contents("https://api.coinmarketcap.com/v2/ticker/693/");
-			$jsonSC = file_get_contents("https://api.coinmarketcap.com/v2/ticker/1042/");
-
-
-			$BTC = json_decode($jsonBTC);
-			$LTC = json_decode($jsonLTC);
-			$ETH = json_decode($jsonETH);
-			$BCH = json_decode($jsonBCH);
-			$ETC = json_decode($jsonETC);
-			$XVG = json_decode($jsonXVG);
-			$SC = json_decode($jsonSC);
-
-			$infoCrypto = [$BTC, $LTC, $ETH, $BCH, $ETC, $XVG, $SC];
-
-			return $this->render('../views/main.php',[
-				"infoCrypto"=>$infoCrypto]
-			);
+			return $this->render('../views/main.php');
 		}
 
 		public function getCalculator(){
@@ -63,8 +42,8 @@
 			]);
 		}
 
-		public function getVs(){
-			return $this->render('../views/vs.php');
+		public function getUs(){
+			return $this->render('../views/us.php');
 		}
 	}
 

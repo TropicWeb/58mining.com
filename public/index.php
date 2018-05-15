@@ -14,7 +14,7 @@
 	}*/
  	//RUTA BASE
 	$baseDir = str_replace(basename($_SERVER['SCRIPT_NAME']),'',$_SERVER['SCRIPT_NAME']);
-	$baseUrl = 'https://' . $_SERVER['HTTP_HOST'] . $baseDir;
+	$baseUrl = 'http://' . $_SERVER['HTTP_HOST'] . $baseDir;
 	define('BASE_URL', $baseUrl);
 	use Phroute\Phroute\RouteCollector; //Importar el phroute
 	

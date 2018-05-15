@@ -39,7 +39,72 @@ li:focus, a:focus {
     outline: none;
 }
 
-/*Sección 1*/
+/*Sección 3*/
+
+.imgprin{
+    padding: none;
+}
+
+
+.sec3{
+    margin-top: 10px;
+    background-color: #1f2a44;
+    height: 150px;
+}
+
+.texthome{
+    color: #fff;
+    font-family: 'Rubik';
+}
+
+.martex{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sec4{
+    height: auto;
+    margin-top: 10px;
+}
+
+.textchain{
+    font-size: 2.625em;
+}
+
+.hometex{
+    font-size: 0.985em;
+    font-family:'Rubik';
+}
+
+.sec5{
+    background-color: #ce9729;
+    height: 100px;
+}
+
+.copy{
+    height: 80px;
+    width: auto;
+    margin-top: 10px;
+}
+
+.parallax{
+    width: 100%;
+    height: 88vh;
+    background-image: url(../images/paralize.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.fotex{
+    margin-top: 30px;
+    color: black;
+}
+
+.fotex:hover{
+    color: #fff;
+}
+
 
 
 // Extra small devices (portrait phones, less than 576px)
@@ -55,4 +120,4 @@ li:focus, a:focus {
 @media (min-width: 992px) and (max-width: 1199.98px) {}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {}4

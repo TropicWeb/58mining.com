@@ -30,7 +30,7 @@
           <a class="nav-link" href="<?php echo BASE_URL?>">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="#">Us</a>
+          <a class="nav-link" href="us">Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Statics</a>
@@ -48,9 +48,9 @@
       <div class="col-md-6 col-xs-8">
         <div class="d-flex flex-row bd-highlight justify-content-center">
           <div class="p-2 bd-highlight convert">
-            <div class="d-flex flex-row bd-highlight justify-content-around">
+            <div class="d-flex flex-row bd-highlight justify-content-around select">
               <div class="p-2 bd-highlight">
-                <input id="input" class="p-2 bd-highlight form-control form-control-lg imp" type="text" placeholder="USD ($)">             
+                <input id="input" class="p-2 bd-highlight form-control form-control-lg imp" type="text"  placeholder="USD ($)">
               </div>
 
               <div class="p-2 bd-highlight">
@@ -74,14 +74,14 @@
         </div>        
       </div>
       <div class="col-md-3 col-xs-2"></div>
-    </div>
+   </div>
 
    <div class="row sep12">
       <div class="col-md-1"></div>
       <div class="col-md-10">
         <div class="d-flex flex-row bd-highlight justify-content-center">
           <div class="p-2 bd-highlight convert">
-            <div class="d-flex flex-row bd-highlight justify-content-around">
+            <div class="d-flex flex-row bd-highlight justify-content-around selector">
               <div class="p-2 bd-highlight">
                 <select id="selector1" class="form-control form-control-lg imp2">
                   <option value="BTC">BTC - Bitcoin</option>
@@ -113,48 +113,48 @@
               <div class="p-2 bd-highlight">
                 <div class="animated estacal">
                   <div class="row">
-                    <section class="col-md-3"></section>
-                    <section class="col-md-6">
+                    <section class="col-md-2"></section>
+                    <section class="col-md-8">
                       <p id="lr1" class=" estares text-center">M1/M2</p>
                       <p id="r1" class=" estares text-center">1,503</p>
                     </section>
-                    <section class="col-md-3"></section>
+                    <section class="col-md-2"></section>
                   </div>
                 </div>         
               </div>
               <div class="p-2 bd-highlight">
                 <div class="animated estacal">
                   <div class="row">
-                    <section class="col-md-3"></section>
-                    <section class="col-md-6">
+                    <section class="col-md-2"></section>
+                    <section class="col-md-8">
                       <p id="lr2" class=" estares text-center">M2/M1</p>
                       <p id="r2" class=" estares text-center">2,509</p>
                     </section>
-                    <section class="col-md-3"></section>
+                    <section class="col-md-2"></section>
                   </div>
                 </div>         
               </div>
               <div class="p-2 bd-highlight">
                 <div class="animated estacal">
                   <div class="row">
-                    <section class="col-md-3"></section>
-                    <section class="col-md-6">
+                    <section class="col-md-2"></section>
+                    <section class="col-md-8">
                       <p id="lr3" class=" estares text-center">% (M1)</p>
                       <p id="r3" class=" estares text-center">+4,25%</p>
                     </section>
-                    <section class="col-md-3"></section>
+                    <section class="col-md-2"></section>
                   </div>
                 </div>     
               </div>
               <div class="p-2 bd-highlight">
                 <div class="animated estacal">
                   <div class="row">
-                    <section class="col-md-3"></section>
-                    <section class="col-md-6">
+                    <section class="col-md-2"></section>
+                    <section class="col-md-8">
                       <p id="lr4" class=" estares text-center">% (M1)</p>
                       <p id="r4" class=" estares text-center">-1,25%</p>
                     </section>
-                    <section class="col-md-3"></section>
+                    <section class="col-md-2"></section>
                   </div>
                 </div>        
               </div>
@@ -165,13 +165,29 @@
       <div class="col-md-1"></div>            
     </div>
   </section>
+<!--Footer seccion 5-->
+  <section class="container-fluid sec5c">
+    <div class="row">
+      <div class="col-md-9">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a class="nav-link fotex" href="<?php echo BASE_URL?>">Home<span class="sr-only">(current)</span></a></li>
+          <li class="list-inline-item"><a class="nav-link fotex" href="us">Us</a></li>
+          <li class="list-inline-item"><a class="nav-link fotex" href="#">Statics</a></li>
+          <li class="list-inline-item"><a class="nav-link fotex" href="calculator">Calculator</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <img src="Images/copy.png" class="img-fluid copy" alt="Responsive image">
+      </div>
+  </section>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="JS/jquery-3.3.1.min.js" type="text/javascript"></script>  
     <script type="text/javascript" src="JS/jquery.js"></script>
     <script type="text/javascript" src="JS/bootstrap.bundle.js"></script>
     <script type="text/javascript" src="JS/bootstrap.min.js"></script>
-   
+
+
    <script>
     var calculate = function (){
       if($("#input").val()!=""){
@@ -324,8 +340,8 @@
 
       //EFECTOS
     if ($(".estacal").hasClass("key")){
-      $(".estacal").removeClass("fadeInUp");
-      $(".estacal").addClass("fadeOutDown");
+      $(".estacal").removeClass("fadeIn");
+      $(".estacal").addClass("fadeOut");
       var delayInMilliseconds = 750; //0.5 seconds
       setTimeout(function() {
           $(".estacal").removeClass("key");
@@ -355,14 +371,14 @@
       $("#lr4").text('% '+ option2);
       $("#r4").text(percent2);
 
-      $(".estacal").removeClass("fadeOutDown");
+      $(".estacal").removeClass("fadeOut");
       if(percent1>0) $("#r3").addClass("pos");
       else $("#r3").addClass("neg");
       if(percent2>0) $("#r4").addClass("pos");
       else $("#r4").addClass("neg");
       $(".estares").addClass("key2");
       $(".estacal").addClass("key");
-      $(".estacal").addClass("fadeInUp");
+      $(".estacal").addClass("fadeIn");
     }, delayInMilliseconds);
       
     }
